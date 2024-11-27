@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #0f0f0f;
+}
+
+.white {
+    color: #fff;
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    position: relative;
+    z-index: 99;
+}
+
+nav {
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 120rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: transparent;
+}
+
+#nav-logo {
+    width: 148px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.lang {
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.352);
+    background-color: rgba(23, 23, 23, 0.601);
+    border-radius: 20px;
+    outline: none;
+}
+
+#lang-sym {
+    height: 16px;
+    width: 16px;
+}
+
+#lang-select {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+#lang-select option {
+    color: black;
+    text-align: center;
+    width: 120px;
+    height: 70px;
+}
+
+.sign-in {
+    width: 77px;
+    height: 32px;
+    background: white;
+    color: black;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.sign-in:hover {
+    transition: 400ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-back {
+    margin-top: calc(-14.2593% - 15rem);
+    mask-image: linear-gradient(rgb(217, 217, 217) 78.62%, rgba(115, 115, 115, 0) 85.7407%);
+    height: 87.5rem;
+    filter: blur(16px);
+    position: absolute;
+    width: 100vw;
+    opacity: 0.15;
+    object-fit: cover;
+    object-position: center;
+    z-index: -99;
+}
+
+.hero-back-1 {
+    opacity: 75%;
+    background: radial-gradient(92.16% 100% at 49.87% 0%, rgba(247, 99, 107, 0.3) 19.86%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    z-index: -98;
+    height: 75rem;
+    width: 100vw;
+}
+
+.hero-back-2 {
+    background: radial-gradient(50% 100% at 50% 0%, rgba(44, 66, 156, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    width: 100vw;
+    z-index: -97;
+    height: 75rem;
+}
+
+.hero-section {
+    width: calc(100vw - 6rem);
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.hero-section-inner {
+    filter: drop-shadow(24px 32px 24px rgba(0, 0, 0, 0.6));
+}
+
+.video-1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 16px 16px;
+    mask-image: radial-gradient(103% 12% at 50% 102%, transparent 50%, white 51%);
+}
+
+.video-1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    background: radial-gradient(at top left, white 25%, transparent 70%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 100;
+    pointer-events: none;
+    border-radius: 20px 20px 16px 16px;
+}
+
+.video-2 {
+    height: 100%;
+    background: rgba(249, 146, 151, 0.2);
+}
+
+.video-3 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    mask-image: linear-gradient(180deg, #fff 71.48%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+.video-4 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 42.22%, rgba(0, 0, 0, 0.90) 75%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-video {
+    transform: scale(1.125);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-1 {
+    padding: 0 5rem 4.5rem;
+    height: 33.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 120rem;
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 37.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.unli {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 125%;
+}
+
+.strt {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.email {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.email-inner {
+    max-width: 36.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.email-inner>h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding-top: 16px;
+}
+
+.label-input {
+    width: auto;
+    text-align: left;
+    position: relative;
+    display: inline-flex;
+    vertical-align: text-top;
+    flex: 1 1 auto;
+}
+
+.label-input>label {
+    position: absolute;
+    z-index: 1;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    left: 1rem;
+    right: 1rem;
+    top: 0.5rem;
+    pointer-events: none;
+}
+
+.input {
+    width: 100%;
+    min-width: 12.5rem;
+    position: relative;
+    z-index: 0;
+    text-align: left;
+}
+
+#email-add {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background: transparent;
+    border: 0 solid transparent;
+    position: relative;
+    z-index: 99;
+    outline: none;
+}
+
+.input div {
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 100px;
+    border-width: 0.0625rem;
+    border-color: rgba(128, 128, 128, 0.7);
+    border-style: solid;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.email-input>button {
+    flex: 0 0 auto;
+    margin-top: 0;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 0px;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    background: rgb(229, 9, 20);
+    transition: all 0.25s ease-in-out;
+}
+
+.email-input>button:hover {
+    background: rgba(229, 9, 20, 0.7);
+}
+
+.email-input>button>div>svg {
+    position: relative;
+    top: 3px;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 9.25rem;
+    margin: 0 auto;
+}
+
+.movies-cont {
+    margin-bottom: 2.5rem;
+}
+
+.movie-pics {
+    margin-top: 0.5rem;
+}
+
+.movie-pics>ul {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-pics>ul>li {
+    list-style: none;
+    padding: 0.65rem 0.375rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie-pics>ul>li>div {
+    width: 11.5rem;
+    height: 16.1rem;
+    border-radius: 1rem;
+}
+
+.movie-pics>ul>li:hover {
+    transform: scale(1.06);
+}
+
+.reasons-cont {
+    margin-bottom: 2.5rem;
+}
+
+.reasons {
+    margin-top: 0.3rem;
+}
+
+.reasons>ul {
+    display: flex;
+}
+
+.reasons>ul>li {
+    list-style: none;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    flex: 1;
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    padding: 0.875rem 1rem 4.5rem 1rem;
+    position: relative;
+}
+
+.reasons>ul>li>h3 {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.reasons>ul>li>img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+.faq-cont {
+    margin-bottom: 2.5rem;
+}
+
+.faqs {
+    margin-top: 0.75rem;
+    margin-left: 0;
+}
+
+.faqs>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.faqs>ul>li {
+    list-style: none;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.faqs>ul>li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.faqs>ul>li>h3 {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.last {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.start {
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border-radius: 100rem;
+    background: rgb(229, 9, 20);
+    transition: all 0.25s ease-in-out;
+}
+
+.start:hover {
+    background: rgba(229, 9, 20, 0.7);
+}
+
+footer {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% + 0.75rem);
+    max-width: 120rem;
+    padding: 0 18.5rem;
+    padding-bottom: 6rem;
+}
+
+.links {
+    margin-top: 36px;
+    padding: 4px;
+}
+
+.links>ul {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-left: -0.75rem;
+    margin-top: 0.75rem;
+}
+
+.links>ul>li {
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    list-style: none;
+    line-height: 1.5;
+    flex: 0 0 calc(25% - 0.75rem);
+}
+
+.links>ul>li>a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+.nflix-ind {
+    margin-top: 36px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+}
