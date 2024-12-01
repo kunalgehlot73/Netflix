@@ -35,14 +35,6 @@ nav {
     background: transparent;
 }
 
-#nav-logo {
-    width: 9.25rem;
-    height: 2.5rem;
-    margin-left: 16px;
-    position: relative;
-    top: 5px;
-}
-
 .nav-btn {
     display: flex;
     justify-content: space-between;
@@ -63,19 +55,19 @@ nav {
     outline: none;
 }
 
-#lang-sym {
+.lang-sym {
     height: 16px;
     width: 16px;
 }
 
-#lang-select {
+.lang-select {
     background: none;
     outline: none;
     border: none;
     font-size: 16px;
 }
 
-#lang-select option {
+.lang-select option {
     color: black;
     text-align: center;
     width: 120px;
@@ -210,22 +202,10 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 37.5rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-}
-
-.unli {
-    margin-bottom: 1rem;
-    line-height: 125%;
-}
-
-.strt {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 400;
 }
 
 .email {
@@ -240,6 +220,7 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .email-inner>h3 {
@@ -251,7 +232,6 @@ nav {
 
 .email-input {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     width: 100%;
     position: relative;
@@ -371,6 +351,7 @@ nav {
 .movie-pics>ul {
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     overflow-y: hidden;
 }
 
@@ -412,22 +393,7 @@ nav {
     flex: 1;
     margin-top: 0.5rem;
     margin-left: 0.75rem;
-    padding: 0.875rem 1rem 4.5rem 1rem;
     position: relative;
-}
-
-.reasons>ul>li>h3 {
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
-.reasons>ul>li>img {
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    right: 1rem;
-    bottom: 0.5rem;
 }
 
 .faq-cont {
@@ -466,7 +432,6 @@ nav {
     font-size: 1.125rem;
     font-weight: 500;
 }
-
 .last {
     width: 100%;
     display: flex;
@@ -533,10 +498,180 @@ footer > div{
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.7);
 }
-@media screen and (max-width:959px) {
-    
+@media screen and (max-width:599px) {
+    #nav-logo {
+        width: 1.1rem;
+        height: 2rem;
+        margin-left: 16px;
+        position: relative;
+        top: 5px;
+    }
+    .hero-section{
+        width: calc(100vw - 3rem);
+    }
+    .lang{
+        width: 65px;
+    }
+    .lang-select{
+        width: 20px;
+    }
+    .container{
+        padding: 0 1.5rem;
+    }
+    .input{
+        width: 100%;
+    }
+    .label-input{
+        flex: 0 0 100%;
+    }
+    .email-input{
+        flex-direction: column;
+    }
+    .email-input>button{
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.125rem;
+        min-height: auto;
+    }
+    .email-input>button>div>svg{
+        top: 0;
+    }
+    footer{
+        padding: 0 1.5rem;
+        padding-bottom: 6rem;
+    }
+    .links>ul>li{
+        flex: 0 0 100%;
+    }
+    .unli{
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .strt{
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .text-1{
+        height: 22.5rem;
+        padding: 0 1rem 2.5rem;
+    }
+    .text-2{
+        max-width: ;
+    }
+    .four-headings{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .movie-pics>ul>li>div{
+        width: 8.25rem;
+        height: 11.55rem;
+    }
+    .reasons>ul{
+        flex-direction: column;
+    }
+    .reasons>ul>li{
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .reasons>ul>li>h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .reasons>ul>li>img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .faqs>ul>li{
+        padding: 1rem;
+    }
+    .faqs>ul>li>h3 {
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width:600px) and (max-width:959px) {
+    #nav-logo {
+        width: 1.1rem;
+        height: 2rem;
+        margin-left: 16px;
+        position: relative;
+        top: 5px;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    footer{
+        padding: 0 2rem;
+        padding-bottom: 6rem;
+    }
+    .links>ul>li{
+        flex: 0 0 50%;
+    }
+    .unli{
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .strt{
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .text-1{
+        height: 22.5rem;
+        padding: 0 1rem 2.5rem;
+    }
+    .text-2{
+        max-width: 24.6825rem;
+    }
+    .four-headings{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .movie-pics>ul>li>div{
+        width: 8.25rem;
+        height: 11.55rem;
+    }
+    .reasons>ul{
+        flex-direction: column;
+    }
+    .reasons>ul>li{
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .reasons>ul>li>h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .reasons>ul>li>img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .faqs>ul>li{
+        padding: 1rem;
+    }
+    .faqs>ul>li>h3 {
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
 }
 @media screen and (min-width:960px) and (max-width: 1279px) {
+    #nav-logo {
+        width: 9.25rem;
+        height: 2.5rem;
+        margin-left: 16px;
+        position: relative;
+        top: 5px;
+    }
     .container{
         padding: 0 5rem;
     }
@@ -548,16 +683,39 @@ footer > div{
         flex: 0 0 33.33%;
     }
     .unli{
+        margin-bottom: 0.75rem;
         font-size: 3rem;
         font-weight: 900;
+    }
+    .strt{
+        margin-bottom: 0.75rem;
+        font-size: 1.125rem;
+        font-weight: 400;
     }
     .text-1{
         height: 25rem;
         padding: 0 5rem 3.5rem;
     }
+    .text-2{
+        max-width: 37.5rem;
+    }
     .four-headings{
         font-size: 1.25rem;
         font-weight: 500;
+    }
+    .reasons>ul>li{
+        padding: 0.875rem 1rem 4.5rem 1rem;
+    }
+    .reasons>ul>li>h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+    .reasons>ul>li>img {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0.5rem;
     }
     .movie-pics>ul>li>div{
         width: 9.375rem;
@@ -565,6 +723,13 @@ footer > div{
     }
 }
 @media screen and (min-width:1280px) {
+    #nav-logo {
+        width: 9.25rem;
+        height: 2.5rem;
+        margin-left: 16px;
+        position: relative;
+        top: 5px;
+    }
     .container{
         padding: 0 9.25rem;
     }
@@ -576,16 +741,39 @@ footer > div{
         flex: 0 0 25%;
     }
     .unli{
+        margin-bottom: 1rem;
         font-size: 3.5rem;
         font-weight: 900;
+    }
+    .strt {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
     .text-1{
         height: 33.5rem;
         padding: 0 5rem 4.5rem;
     }
+    .text-2{
+        max-width: 37.5rem;
+    }
     .four-headings{
         font-size: 2rem;
         font-weight: 700;
+    }
+    .reasons>ul>li{
+        padding: 0.875rem 1rem 4.5rem 1rem;
+    }
+    .reasons>ul>li>h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+    .reasons>ul>li>img {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0.5rem;
     }
     .movie-pics>ul>li>div{
         width: 11.5rem;
