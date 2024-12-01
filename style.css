@@ -36,8 +36,9 @@ nav {
 }
 
 #nav-logo {
-    width: 148px;
-    height: 40px;
+    width: 9.25rem;
+    height: 2.5rem;
+    margin-left: 16px;
     position: relative;
     top: 5px;
 }
@@ -197,8 +198,6 @@ nav {
 }
 
 .text-1 {
-    padding: 0 5rem 4.5rem;
-    height: 33.5rem;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -220,8 +219,6 @@ nav {
 
 .unli {
     margin-bottom: 1rem;
-    font-size: 3.5rem;
-    font-weight: 900;
     line-height: 125%;
 }
 
@@ -284,18 +281,22 @@ nav {
 }
 
 .input {
-    width: 100%;
+    width: auto;
+    height: 100%;
     min-width: 12.5rem;
     position: relative;
     z-index: 0;
     text-align: left;
+    vertical-align: text-top;
+    flex: 1 1 auto;
 }
 
 #email-add {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     width: 100%;
-    padding: 1.5rem 1rem 0.5rem;
+    max-height: 3.5rem;
+    padding: 1rem;
     font-size: 1rem;
     font-weight: 400;
     background: transparent;
@@ -305,6 +306,9 @@ nav {
     outline: none;
 }
 
+#email-add::placeholder{
+    color: white;
+}
 .input div {
     background: rgba(22, 22, 22, 0.7);
     border-radius: 100px;
@@ -353,12 +357,11 @@ nav {
 .container {
     width: 100%;
     max-width: 120rem;
-    padding: 0 9.25rem;
     margin: 0 auto;
 }
 
 .movies-cont {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .movie-pics {
@@ -382,8 +385,6 @@ nav {
 }
 
 .movie-pics>ul>li>div {
-    width: 11.5rem;
-    height: 16.1rem;
     border-radius: 1rem;
 }
 
@@ -490,15 +491,15 @@ nav {
 .start:hover {
     background: rgba(229, 9, 20, 0.7);
 }
-
-footer {
+footer{
+    width: 100%;
+    max-width: 120rem;
     margin-top: 1.5rem;
+}
+footer > div{
     margin-left: auto;
     margin-right: auto;
-    width: calc(100% + 0.75rem);
-    max-width: 120rem;
-    padding: 0 18.5rem;
-    padding-bottom: 6rem;
+    max-width: 75.75rem;
 }
 
 .links {
@@ -512,16 +513,14 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin-left: -0.75rem;
-    margin-top: 0.75rem;
+    margin-top: -0.75rem;
 }
 
 .links>ul>li {
     margin-top: 0.75rem;
-    margin-left: 0.75rem;
+    padding-left: 0.75rem;
     list-style: none;
     line-height: 1.5;
-    flex: 0 0 calc(25% - 0.75rem);
 }
 
 .links>ul>li>a {
@@ -533,4 +532,63 @@ footer {
     margin-top: 36px;
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width:959px) {
+    
+}
+@media screen and (min-width:960px) and (max-width: 1279px) {
+    .container{
+        padding: 0 5rem;
+    }
+    footer{
+        padding: 0 5rem;
+        padding-bottom: 6rem;
+    }
+    .links>ul>li{
+        flex: 0 0 33.33%;
+    }
+    .unli{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .text-1{
+        height: 25rem;
+        padding: 0 5rem 3.5rem;
+    }
+    .four-headings{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .movie-pics>ul>li>div{
+        width: 9.375rem;
+        height: 13.125rem;
+    }
+}
+@media screen and (min-width:1280px) {
+    .container{
+        padding: 0 9.25rem;
+    }
+    footer{
+        padding: 0 9.25rem;
+        padding-bottom: 6rem;
+    }
+    .links>ul>li{
+        flex: 0 0 25%;
+    }
+    .unli{
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+    .text-1{
+        height: 33.5rem;
+        padding: 0 5rem 4.5rem;
+    }
+    .four-headings{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .movie-pics>ul>li>div{
+        width: 11.5rem;
+        height: 16.1rem;
+    }
 }

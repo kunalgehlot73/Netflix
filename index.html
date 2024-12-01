@@ -12,7 +12,11 @@
 <body>
     <header>
         <nav>
-            <img src="Assets/logo.svg" alt="logo" id="nav-logo">
+            <picture>
+                <source srcset="Assets/n-logo.svg" media="(max-width: 959px)">
+                <source srcset="Assets/logo.svg" media="(min-width: 960px)">
+                <img src="Assets/logo.svg" alt="logo" id="nav-logo">
+            </picture>            
             <div class="nav-btn">
                 <div class="lang white">
                     <img src="Assets/SVG/lang.svg" alt="E" id="lang-sym">
@@ -55,12 +59,9 @@
             <div class="email-inner">
                 <h3 class="white">Ready to watch? Enter your email to create or restart your membership.</h3>
                 <div class="email-input">
-                    <div class="label-input">
-                        <label for="email-add" class="white">Email address</label>
-                        <div class="input">
-                            <input type="email" name="email" id="email-add" class="white">
-                            <div></div>
-                        </div>
+                    <div class="input">
+                        <input type="email" name="email" id="email-add" class="white" placeholder="Email address">
+                        <div></div>
                     </div>
                     <button type="button" class="white">
                         Get Started &nbsp;
@@ -77,7 +78,7 @@
         </div>
         <div class="container">
             <div class="movies-cont">
-                <h1 class="white">Trending Now</h1>
+                <h2 class="white  four-headings">Trending Now</h2>
                 <div class="movie-pics">
                     <ul class="scroll-none">
                         <li>
@@ -124,7 +125,7 @@
                 </div>
             </div>
             <div class="movies-cont">
-                <h1 class="white">Only on Netflix</h1>
+                <h2 class="white  four-headings">Only on Netflix</h2>
                 <div class="movie-pics">
                     <ul class="scroll-none">
                         <li>
@@ -171,7 +172,7 @@
                 </div>
             </div>
             <div class="reasons-cont">
-                <h1 class="white">More reasons to join</h1>
+                <h2 class="white four-headings">More reasons to join</h2>
                 <div class="reasons">
                     <ul>
                         <li style="margin-left: 0;">
@@ -190,7 +191,7 @@
                 </div>
             </div>
             <div class="faq-cont">
-                <h1 class="white">Frequently Asked Questions</h1>
+                <h2 class="white four-headings">Frequently Asked Questions</h2>
                 <div class="faqs">
                     <ul>
                         <li>
